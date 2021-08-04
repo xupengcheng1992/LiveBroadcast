@@ -23,9 +23,8 @@ class PageContenView: UIView {
     weak var delegate : pageContentViewDelegate?
     private let contenCellID = "contenCellID"
     
-    
     // 懒加载属性
-    private lazy var collectonView : UICollectionView = {[weak self] in 
+    private lazy var collectonView : UICollectionView = {[weak self] in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = (self?.bounds.size)!
         layout.minimumLineSpacing = 0

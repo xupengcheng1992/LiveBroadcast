@@ -22,7 +22,7 @@ extension DataViewModel{
     //请求所有数据
     func resquestData(finishCallback : @escaping () -> ()){
         let parameter = ["limit" : "4", "offset" : "0", "time" : NSDate.getCurrentTime()]
-//        请求第一部分推荐数据
+//       请求第一部分推荐数据
         let netGroup = DispatchGroup()
         netGroup.enter()
         NetworkTools.requestData(urlString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", methodType: .get, parameters: ["time" : NSDate.getCurrentTime()]) { (response) in

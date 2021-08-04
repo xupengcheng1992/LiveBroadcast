@@ -26,6 +26,8 @@ class HomePageVC: UIViewController {
         return titleView
     }()
     
+    
+    
     //内容界面展示
     private lazy var pageContenView : PageContenView = {[weak self] in
         let contenFrameH = KScreenH - KTitleViewH - KNavigationBarH - KStatusBarH - KTabBarH
@@ -58,6 +60,7 @@ extension HomePageVC{
         setNav()
         view.addSubview(pageTitleView)
         view.addSubview(pageContenView)
+            
     }
         private func setNav(){
         

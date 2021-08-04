@@ -12,7 +12,6 @@ class AnchorGroup: NSObject {
     @objc var tag_name : String = ""
     @objc var icon_url : String = ""
 
-    
     //定义主播的模型对象数组
     @objc lazy var anchors : [AnchorModel] = [AnchorModel]()
     
